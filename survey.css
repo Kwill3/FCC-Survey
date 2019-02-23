@@ -1,0 +1,23 @@
+
+main {
+    max-width: 900px;
+    position: relative;
+    margin: 50px auto;
+    border: 0px;
+    border-radius: 20px;
+    padding: 50px;
+    background: linear-gradient(35deg,
+      #ccffff,
+      #675cff);
+    font-family: "nanum gothic", sans-serif;
+  }
+  
+  h1 {
+    font-size: 38px;
+    text-align: center;
+    font-family: 'eb garamond', serif;
+  }
+
+  .center {
+      text-align: center;
+  }

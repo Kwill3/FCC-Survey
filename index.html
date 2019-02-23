@@ -1,0 +1,131 @@
+<html>
+    <main>
+        <head>
+            <link rel="stylesheet" href="survey.css">
+            <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Nanum+Gothic" rel="stylesheet">
+        </head>
+        <body>
+            <form action="/example.php" method="POST" id="survey-form">
+                <h1 id="title"><u>Survey Form</u></h1>
+                <p id="description" class="center">Please help us complete this survey on diamond ring purchases and your preferences</p>
+                <br>
+                <section>
+                    <label for="name" id="name-label">*Name: </label>
+                    <input type="text" id="name" name="name" placeholder="Enter name here" required>
+                </section>
+                <br>
+                <hr>
+                <section>
+                    <label for="email" id="email-label">*E-mail: </label>
+                    <input type="email" id="email" name="email" placeholder="Enter email here" required> 
+                </section>
+                <br>
+                <hr>
+                <section>
+                    <label for="age" id="number-label">*Age: </label>
+                    <input type="number" id="age" name="age" min="0" max="100" placeholder="0-100" required>
+                </section>
+                <br>
+                <hr>
+                <section>
+                    <p>Have you ever purchased a diamond before?</p>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="purchase" value="yes">
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="purchase" value="no">
+                </section>
+                <br>
+                <hr>
+                <section>
+                    <label for="shape">Shape of diamond:</label>
+                    <br>
+                    <br>
+                    <select name="shape" id="shape">
+                        <option disabled value="select">Select shape</option>
+                        <option value="round">Round</option>
+                        <option value="cushion">Cushion</option>
+                        <option value="princess">Princess</option>
+                        <option value="heart">Heart</option>
+                        <option value="marquise">Marquise</option>
+                        <option value="oval">Oval</option>
+                        <option value="pear">Pear</option>
+                        <option value="asscher">Asscher</option>
+                        <option value="radiant">Radiant</option>
+                        <option value="emerald">Emerald</option>
+                    </select>
+                </section>
+                <br>
+                <hr>
+                <section>
+                    <p>Your diamond stats</p>
+                    <label for="carat">Carat:</label>
+                    <input type="number" id="carat" name="carat" min="0" max="10" step="0.01">
+                    <br>
+                    <br>
+                    <label for="clarity">Clarity:</label>
+                    <select name="clarity" id="clarity">
+                        <option disabled value="select">Select Clarity</option>
+                        <option value="flawless">FL- Flawless</option>
+                        <option value="internal">IF- Internally Flawless</option>
+                        <option value="vvs1">VVS1- Very, Very Slightly Included 1</option>
+                        <option value="vvs2">VVS2- Very, Very Slightly Included 2</option>
+                        <option value="vs1">VS1- Very Slightly Included 1</option>
+                        <option value="vs2">VS2- Very Slightly Included 2</option>
+                        <option value="s1">S1- Slightly Included 1</option>
+                        <option value="s2">S2- Slightly Included 2</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="cut">Cut:</label>
+                    <select name="cut" id="cut">
+                        <option value="super">Super Ideal</option>
+                        <option value="ideal">Ideal</option>
+                        <option value="vgood">Very Good</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="color">Color:</label>
+                    <select name="color" id="color">
+                        <option value="d">D</option>
+                        <option value="e">E</option>
+                        <option value="f">F</option>
+                        <option value="g">G</option>
+                        <option value="h">H</option>
+                        <option value="i">I</option>
+                        <option value="j">J</option>
+                    </select>
+                </section>
+                <br>
+                <hr>
+                <section>
+                    <p>Which of the 5 Cs matters to you?</p>
+                    <label for="cut">Cut</label>
+                    <input type="checkbox" id="cut" name="cut" value="cut">
+                    <label for="color">Color</label>
+                    <input type="checkbox" id="color" name="color" value="color">
+                    <label for="carat">Carat</label>
+                    <input type="checkbox" id="carat" name="carat" value="carat">
+                    <label for="clarity">Clarity</label>
+                    <input type="checkbox" id="clarity" name="clarity" value="clarity">
+                    <label for="cert">Certificate</label>
+                    <input type="checkbox" name="cert" id="cert" value="cert">
+                </section>
+                <br>
+                <hr>
+                <section>
+                    <label for="remark">Additional remarks</label>
+                    <br>
+                    <textarea name="remark" id="remark" cols="100" rows="5"></textarea>
+                </section>
+                <section>
+                    <input type="submit" value="Submit">
+                </section>
+            </form>
+        
+        </body>
+        <footer>
+        </footer>
+    </main>
+</html>
